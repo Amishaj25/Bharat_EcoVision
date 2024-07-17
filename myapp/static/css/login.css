@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: url('/static/images/forest.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login-container {
+    text-align: center;
+    background: linear-gradient(180deg, rgba(160, 238, 192, 0.5) -19%, rgba(98, 193, 157, 0.5) 31.61%, rgba(24, 48, 41, 0.5) 115.97%);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+
+}
+
+.logo img {
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.login-box h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-box label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.login-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.login-actions .forgot-password {
+    color: #333;
+    text-decoration: none;
+}
+
+.login-actions .forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background: #45a049;
+}
+
+.register-link {
+    margin-top: 10px;
+    color: #333;
+}
+
+.register-link a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}

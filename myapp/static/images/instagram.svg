@@ -1,0 +1,23 @@
+<svg width="44" height="41" viewBox="0 0 44 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="&#240;&#159;&#166;&#134; icon &#34;instagram icon&#34;">
+<path id="c" d="M37.4 0H6.6C2.95492 0 0 2.75345 0 6.15V34.85C0 38.2466 2.95492 41 6.6 41H37.4C41.0451 41 44 38.2466 44 34.85V6.15C44 2.75345 41.0451 0 37.4 0Z" fill="black"/>
+<path id="c_2" d="M37.4 0H6.6C2.95492 0 0 2.75345 0 6.15V34.85C0 38.2466 2.95492 41 6.6 41H37.4C41.0451 41 44 38.2466 44 34.85V6.15C44 2.75345 41.0451 0 37.4 0Z" fill="url(#paint0_radial_120_213)"/>
+<path id="c_3" d="M37.4 0H6.6C2.95492 0 0 2.75345 0 6.15V34.85C0 38.2466 2.95492 41 6.6 41H37.4C41.0451 41 44 38.2466 44 34.85V6.15C44 2.75345 41.0451 0 37.4 0Z" fill="url(#paint1_linear_120_213)"/>
+<g id="Group">
+<path id="Vector" d="M28.2734 8.16797H15.7266C11.8821 8.16797 8.76562 11.072 8.76562 14.6543V26.3457C8.76562 29.928 11.8821 32.832 15.7266 32.832H28.2734C32.1179 32.832 35.2344 29.928 35.2344 26.3457V14.6543C35.2344 11.072 32.1179 8.16797 28.2734 8.16797Z" stroke="white" stroke-width="2"/>
+<path id="Vector_2" d="M22 26.2659C25.4173 26.2659 28.1875 23.6845 28.1875 20.5002C28.1875 17.316 25.4173 14.7346 22 14.7346C18.5827 14.7346 15.8125 17.316 15.8125 20.5002C15.8125 23.6845 18.5827 26.2659 22 26.2659Z" stroke="white" stroke-width="2.31"/>
+<path id="Vector_3" d="M29.8203 13.6931C30.1051 13.6931 30.3359 13.478 30.3359 13.2126C30.3359 12.9473 30.1051 12.7322 29.8203 12.7322C29.5355 12.7322 29.3047 12.9473 29.3047 13.2126C29.3047 13.478 29.5355 13.6931 29.8203 13.6931Z" stroke="white" stroke-width="7.31143"/>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_120_213" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(17.6 41) scale(44 41)">
+<stop offset="0.1" stop-color="#FFDD55"/>
+<stop offset="0.5" stop-color="#FF543E"/>
+<stop offset="1" stop-color="#C837AB"/>
+</radialGradient>
+<linearGradient id="paint1_linear_120_213" x1="0" y1="0" x2="7.67982" y2="41.2088" gradientUnits="userSpaceOnUse">
+<stop offset="0.1" stop-color="#3771C8"/>
+<stop offset="0.5" stop-color="#6600FF" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
