@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                <title>Login</title>
+                <link rel="stylesheet" href="/static/css/login.css">
+            </head>
+            <body>
+                <div class="login-container">
+                    <div class="logo">
+                        <img src="/static/images/logo.png" alt="EcoVision Logo">
+                    </div>
+                    <div class="login-box">
+                        <h1>LOGIN</h1>
+                        <form action="/login" method="post">
+
+
+                <label for="id">Username/ID</label>
+                <input type="text" id="id" name="id" required>
+                
+                <label for="pass">Password</label>
+                <input type="password" id="pass" name="pass" required>
+                
+                <div class="login-actions">
+                    <a href="#" class="forgot-password">Forget Password</a>
+                </div>
+                
+                <button type="submit">Submit</button>
+            </form>
+            <div class="register-link">
+                No Account? <a href="#">Register</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

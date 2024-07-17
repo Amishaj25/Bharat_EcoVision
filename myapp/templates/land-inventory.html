@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Inventory</title>
+    <link rel="stylesheet" href="/static/css/land-inventory.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="/static/images/logo.png" alt="EcoVision Logo">
+                <span>EcoVision</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#about">About GCP</a></li>
+                    <li><a href="#earn">Earn Green Credits</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="register">Register</button>
+                <button class="login">Login</button>
+            </div>
+        </div>
+    </header>
+    
+    <section class="land-inventory">
+        <div class="inventory-content">
+            <h1>Land Inventory</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <button class="search-button">🔍</button>
+                <button class="filter-button">⚙️</button>
+            </div>
+            <table class="inventory-table">
+                <thead>
+                    <tr>
+                        <th>Land Parcel ID</th>
+                        <th>State</th>
+                        <th>District</th>
+                        <th>Division</th>
+                        <th>Land Area</th>
+                        <th>Available Land</th>
+                        <th>Land Type</th>
+                        <th>Status</th>
+                        <th>View</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>745</td>
+                        <td>TAMIL NADU</td>
+                        <td>Sivaganga</td>
+                        <td></td>
+                        <td>8.7 ha</td>
+                        <td></td>
+                        <td>Degraded Forest Land</td>
+                        <td>APPROVED</td>
+                        <td><a href="#">View</a></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#aboutus">About Us</a>
+            <a href="#faqs">FAQs</a>
+            <a href="#contactus">Contact Us</a>
+            <a href="#followus">Follow Us</a>
+        </div>
+        <div class="social-icons">
+            <a href="#"><img src="/static/images/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="/static/images/twitter.svg" alt="Twitter"></a>
+            <a href="#"><img src="/static/images/instagram.svg" alt="Instagram"></a>
+        </div>
+    </footer>
+    
+    <script src="land-inventory.js"></script>
+</body>
+</html>
