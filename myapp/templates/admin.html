@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+  <link rel="stylesheet" href="css/kisu.css" />
+
+  <title>BHARAT ECOVISION</title>
+</head>
+
+<body>
+  <!-- top navigation bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top"
+    style="background-image: linear-gradient(to bottom, #9ed5b0, #89d466);">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar"
+        aria-controls="offcanvasExample">
+        <span class="navbar-toggler-icon" data-bs-target="#sidebar"></span>
+      </button>
+      <a class="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase fw-bold" href="#">
+        <img src="images/logo.png" alt="Logo" class="me-2" style="max-height: 30px;">
+        <!---BHARAT ECOVISION-->
+      </a>
+
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavBar"
+        aria-controls="topNavBar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="topNavBar">
+        <form class="d-flex ms-auto my-3 my-lg-0">
+          <div class="input-group">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-primary" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+        </form>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle ms-2" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="bi bi-person-fill"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- top navigation bar -->
+  <!-- offcanvas -->
+  <br>
+  <div class="offcanvas offcanvas-start sidebar-nav" tabindex="-1" id="sidebar"
+    style="background-image: linear-gradient(to left, #2a7d65, #5aaa75);">
+
+    <div class="offcanvas-body p-0">
+      <nav class="navbar-dark">
+        <ul class="navbar-nav">
+          <li>
+            <div class="text-dark small fw-bold text-uppercase px-3">
+              CORE
+            </div>
+          </li>
+          <li>
+            <a href="admin.html" class="nav-link px-3 active text-dark">
+              <span class="me-2"><i class="bi bi-speedometer2"></i></span>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="my-4">
+            <hr class="dropdown-divider bg-light" />
+          </li>
+          <li>
+            <div class="text-dark small fw-bold text-uppercase px-3 mb-3">
+              Interface
+            </div>
+          </li>
+          <li>
+            <a class="nav-link px-3 sidebar-link text-dark" data-bs-toggle="collapse" href="#layouts">
+              <span class="me-2"><i class="bi bi-layout-split"></i></span>
+              <span>User Management</span>
+              <span class="ms-auto">
+                <span class="right-icon">
+                  <i class="bi bi-chevron-down"></i>
+                </span>
+              </span>
+            </a>
+            <div class="collapse" id="layouts">
+              <ul class="navbar-nav ps-3">
+                <li>
+                  <a href="#" class="nav-link px-3 text-dark">
+                    <span class="me-2"><i class="bi bi-person"></i></span>
+                    <span>Implementing Parties</span>
+                  </a>
+                  <a href="#" class="nav-link px-3 text-dark">
+                    <span class="me-2"><i class="bi bi-person"></i></span>
+                    <span>Applicants Parties</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="drone.html" class="nav-link px-3 text-dark">
+              <span class="me-2"><i class="bi bi-book-fill"></i></span>
+              <span>Drone Details</span>
+            </a>
+          </li>
+          <li class="my-4">
+            <hr class="dropdown-divider bg-light" />
+          </li>
+          <li>
+            <div class="text-dark small fw-bold text-uppercase px-3 mb-3">
+              Addons
+            </div>
+          </li>
+          <li>
+            <a href="#" class="nav-link px-3 text-dark">
+              <span class="me-2"><i class="bi bi-graph-up"></i></span>
+              <span>Charts</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link px-3 text-dark">
+              <span class="me-2"><i class="bi bi-table"></i></span>
+              <span>Reports and Exports</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- offcanvas -->
+  <main class="mt-5 pt-3">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Dashboard</h3>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div class="row">
+          <!-- Table Section -->
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-header">
+                Implementing Agencies Details
+              </div>
+              <div class="card-body">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col">Agency ID</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Projects</th>
+                      <th scope="col">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-dark">001</td>
+                      <td class="text-muted">Agency A</td>
+                      <td class="text-muted">10</td>
+                      <td class="text-muted">Active</td>
+                    </tr>
+                    <tr>
+                      <td class="text-dark">002</td>
+                      <td class="text-muted">Agency B</td>
+                      <td class="text-muted">15</td>
+                      <td class="text-muted">Inactive</td>
+                    </tr>
+                    <tr>
+                      <td class="text-dark">003</td>
+                      <td class="text-muted">Agency C</td>
+                      <td class="text-muted">20</td>
+                      <td class="text-muted">Active</td>
+                    </tr>
+                    <tr>
+                      <td class="text-dark">004</td>
+                      <td class="text-muted">Agency D</td>
+                      <td class="text-muted">8</td>
+                      <td class="text-muted">Inactive</td>
+                    </tr>
+                    <tr>
+                      <td class="text-dark">005</td>
+                      <td class="text-muted">Agency K</td>
+                      <td class="text-muted">18</td>
+                      <td class="text-muted">active</td>
+                    </tr>
+                    <tr>
+                      <td class="text-dark">006</td>
+                      <td class="text-muted">Agency W</td>
+                      <td class="text-muted">9</td>
+                      <td class="text-muted">Inactive</td>
+                    </tr>
+                    <tr>
+                      <td class="text-dark">007</td>
+                      <td class="text-muted">Agency Q</td>
+                      <td class="text-muted">8</td>
+                      <td class="text-muted">Inactive</td>
+                    </tr>
+                    <tr>
+                      <td class="text-dark">008</td>
+                      <td class="text-muted">Agency D</td>
+                      <td class="text-muted">19</td>
+                      <td class="text-muted">Inactive</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- Pie Chart Section -->
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-header">
+                Project Success Rate
+              </div>
+              <div class="card-body">
+                <canvas id="pieChart" width="40" height="40" class="small-chart"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div class="row">
+            <!-- Bar Graph Section -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        Number of Multinational Companies per Year
+                    </div>
+                    <div class="card-body">
+                        <canvas id="barChart" class="small-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <!-- Table Section -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        Companies Information
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Company ID</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Country</th>
+                                    <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-muted">001</td>
+                                    <td class="text-muted">Company A</td>
+                                    <td class="text-muted">USA</td>
+                                    <td class="text-muted">Active</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-muted">002</td>
+                                    <td class="text-muted">Company B</td>
+                                    <td class="text-muted">Germany</td>
+                                    <td class="text-muted">Active</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-muted">003</td>
+                                    <td class="text-muted">Company C</td>
+                                    <td class="text-muted">Japan</td>
+                                    <td class="text-muted">Inactive</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-muted">004</td>
+                                    <td class="text-muted">Company D</td>
+                                    <td class="text-muted">India</td>
+                                    <td class="text-muted">Active</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5">
+      <div class="row">
+          <!-- Combined Card Section -->
+          <div class="col-md-12 mb-4">
+              <div class="card">
+                  <div class="card-header">
+                      Financial Summary
+                  </div>
+                  <div class="card-body">
+                      <div class="row">
+                          <!-- Pie Chart Section -->
+                          <div class="col-md-6">
+                              <canvas id="financialPieChart" class="chart-container"></canvas>
+                          </div>
+                          <!-- Table Section -->
+                          <div class="col-md-6">
+                              <div class="table-container">
+                                  <table class="table table-hover">
+                                      <thead>
+                                          <tr>
+                                              <th scope="col">Category</th>
+                                              <th scope="col">Amount</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td class="text-muted">Revenue</td>
+                                              <td class="text-muted">$50,000</td>
+                                          </tr>
+                                          <tr>
+                                              <td class="text-muted">Expenses</td>
+                                              <td class="text-muted">$20,000</td>
+                                          </tr>
+                                          <tr>
+                                              <td class="text-muted">Profit</td>
+                                              <td class="text-muted">$30,000</td>
+                                          </tr>
+                                          <tr>
+                                              <td class="text-muted">Loss</td>
+                                              <td class="text-muted">$5,000</td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+    </div>
+  </main>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
+  <script src="./js/jquery-3.5.1.js"></script>
+  <script src="./js/jquery.dataTables.min.js"></script>
+  <script src="./js/dataTables.bootstrap5.min.js"></script>
+  <script src="./js/admin.js"></script> <!--yaha pr!!!-->
+  
+</body>
+
+</html>
