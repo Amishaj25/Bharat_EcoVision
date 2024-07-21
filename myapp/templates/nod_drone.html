@@ -1,0 +1,331 @@
+<!-- Designed by Arunlal Panja -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Arunlal Panja">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="css/kisu.css" />
+
+</head>
+
+<body>
+
+
+    <!-- top navigation bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top"
+        style="background-image: linear-gradient(to bottom, #9ed5b0, #89d466);">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar"
+                aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon" data-bs-target="#sidebar"></span>
+            </button>
+            <a class="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase fw-bold" href="#">
+                <img src="images/logo.png" alt="Logo" class="me-2" style="max-height: 30px;">
+                <!---BHARAT ECOVISION-->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavBar"
+                aria-controls="topNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="topNavBar">
+                <form class="d-flex ms-auto my-3 my-lg-0">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-primary" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle ms-2" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-person-fill"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- top navigation bar -->
+    <!-- offcanvas -->
+
+    <div class="offcanvas offcanvas-start sidebar-nav" tabindex="-1" id="sidebar"
+        style="background-image: linear-gradient(to left, #2a7d65, #5aaa75);">
+
+        <div class="offcanvas-body p-0">
+            <nav class="navbar-dark">
+                <ul class="navbar-nav">
+                    <li>
+                        <br>
+                        <div class="text-dark small fw-bold text-uppercase px-3">
+                            CORE
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3 active text-dark">
+                            <span class="me-2"><i class="bi bi-speedometer2"></i></span>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nodal.html" class="nav-link px-3 text-dark">
+                            <span class="me-2"><i class="bi bi-house-door"></i></span>
+                            <span>Back to Home</span>
+                        </a>
+                    </li>
+                    <li class="my-4">
+                        <hr class="dropdown-divider bg-light" />
+                    </li>
+                    <li>
+                        <div class="text-dark small fw-bold text-uppercase px-3 mb-3">
+                            Interface
+                        </div>
+                    </li>
+                    <!-- <li>
+                        <a class="nav-link px-3 sidebar-link text-dark" data-bs-toggle="collapse" href="#layouts">
+                            <span class="me-2"><i class="bi bi-layout-split"></i></span>
+                            <span>Apply For Land</span>
+                            <span class="ms-auto">
+                                <span class="right-icon">
+                                    <i class="bi bi-chevron-down"></i>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="collapse" id="layouts">
+                            <ul class="navbar-nav ps-3">
+                                <li>
+                                    <a href="#" class="nav-link px-3 text-dark">
+                                        <span class="me-2"><i class="bi bi-file-earmark-plus"></i></span>
+                                        <span>New+</span>
+                                    </a>
+                                    <a href="#" class="nav-link px-3 text-dark">
+                                        <span class="me-2"><i class="bi bi-file-earmark-plus"></i></span>
+                                        <span>Existing</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li> -->
+                    <li>
+                        <a href="#" class="nav-link px-3 text-dark">
+                            <span class="me-2"><i class="bi bi-calendar-check"></i></span>
+                            <span>Schedule Meeting</span>
+                        </a>
+                    </li>
+                    <li class="my-4">
+                        <hr class="dropdown-divider bg-light" />
+                    </li>
+                    <li>
+                        <div class="text-dark small fw-bold text-uppercase px-3 mb-3">
+                            Addons
+                        </div>
+                    </li>
+                    <!-- <li>
+                        <a href="app_payment.html" class="nav-link px-3 text-dark">
+                            <span class="me-2"><i class="bi bi-receipt"></i></span>
+                            <span>Payment History</span>
+                        </a>
+                    </li>-->
+                    <li>
+                        <a href="contact_us.html" class="nav-link px-3 text-dark">
+                            <span class="me-2"><i class="bi bi-headset"></i></span>
+                            <span>Contact Support</span>
+                        </a>
+                    </li> 
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+
+
+
+    <main>
+        <div class="container-fluid">
+            <br><br><br>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2></h2>
+                </div>
+            </div>
+
+            <div class="container mt-4">
+                <h2>Flight Data</h2>
+                <div class="row">
+
+                    <!-- Flight Log 1 -->
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <img src="https://imgs.search.brave.com/LOdWz3baETM6ZYtWGwS04Le-MRSl2KO4kn1TKIcISu0/rs:fit:860:0:0:0/g:ce/aHR0cDovL2Z1bGxk/cm9uZS5zMy51cy13/ZXN0LTIuYW1hem9u/YXdzLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxNi8wNy8y/MTEzMTUyMy8xMzI0/OTg0MV8xNzY1Mjcy/OTYzNjkyMjExXzM0/MTE0MTQwN19uLTEz/LTEwMjR4MTAyNC5q/cGc"
+                                class="card-img-top" alt="Flight Log 1 Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Flight Log 1</h5>
+                                <p class="card-text">
+                                    <strong>Date:</strong> 2024-07-01<br>
+                                    <strong>Duration:</strong> 2 hours<br>
+                                    <strong>Route:</strong> Location A to Location B<br>
+                                    <strong>Issues:</strong> None
+                                </p>
+                            </div>
+                            <div class="card-footer text-end">
+                                <button class="btn btn-secondary btn-sm">
+                                    <i class="bi bi-eye"></i> View More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Flight Log 2 -->
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <img src="https://imgs.search.brave.com/1QCA3AZa0XuPQ3emdq-1hPs9e2oQ3cph6UqPd60lCLk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc3F1YXJlc3Bh/Y2UtY2RuLmNvbS9j/b250ZW50L3YxLzVh/NzVmZDg3MzI2MDFl/YmNjOTg3MDRjYS8x/NTE4NDg0MjM0MTA3/LTdJSTM5MktCN0Uw/SlMzR1VGSTlSL0Fn/cmljdWx0dXJlK0Fl/cmlhbCtTaG90Lmpw/Zw"
+                                class="card-img-top" alt="Flight Log 2 Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Flight Log 2</h5>
+                                <p class="card-text">
+                                    <strong>Date:</strong> 2024-07-05<br>
+                                    <strong>Duration:</strong> 1.5 hours<br>
+                                    <strong>Route:</strong> Location C to Location D<br>
+                                    <strong>Issues:</strong> Minor turbulence
+                                </p>
+                            </div>
+                            <div class="card-footer text-end">
+                                <button class="btn btn-secondary btn-sm">
+                                    <i class="bi bi-eye"></i> View More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Flight Log 3 -->
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <img src="https://imgs.search.brave.com/1gPFF5SOCZnROW27fRwkjBDnX-N-ghZFFtuVUkA30as/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y3JvcHRyYWNrZXIu/Y29tL2ltYWdlcy9i/bG9nLzEwX0VtZXJn/aW5nX0FnVGVjaF9J/bm5vdmF0aW9ucy9k/cm9uZU1vaXN0dXJl/bGV2ZWxzLmpwZw"
+                                class="card-img-top" alt="Flight Log 3 Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Flight Log 3</h5>
+                                <p class="card-text">
+                                    <strong>Date:</strong> 2024-07-10<br>
+                                    <strong>Duration:</strong> 3 hours<br>
+                                    <strong>Route:</strong> Location E to Location F<br>
+                                    <strong>Issues:</strong> None
+                                </p>
+                            </div>
+                            <div class="card-footer text-end">
+                                <button class="btn btn-secondary btn-sm">
+                                    <i class="bi bi-eye"></i> View More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+          
+            <div class="container px-1 px-md-4 py-5 mx-auto">
+                <div class="row">
+                    <!-- Technical Specifications Card -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card" style="background-color: #d0f0c0; border: 1px solid #a8d08d; border-radius: 0.5rem;">
+                            <div class="card-body">
+                                <h4 style="color: #4caf50;">Technical Specifications</h4>
+                                <p>Flight Range: <span id="flight-range">5 km</span></p>
+                                <p>Battery Life: <span id="battery-life">30 mins</span></p>
+                                <p>Camera Resolution: <span id="camera-resolution">4K</span></p>
+                                <p>Sensor Types: <span id="sensor-types">LiDAR, Thermal, RGB</span></p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Status and Maintenance Card -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card" style="background-color: #d0f0c0; border: 1px solid #a8d08d; border-radius: 0.5rem;">
+                            <div class="card-body">
+                                <h4 style="color: #4caf50;">Status and Maintenance</h4>
+                                <p>Current Status: <span id="drone-status">Active</span></p>
+                                <p>Last Maintenance Date: <span id="maintenance-date">2024-07-15</span></p>
+                                <p>Maintenance History: <span id="maintenance-history">Battery Replacement, Camera Calibration</span></p>
+                                <p>Issues/Repairs: <span id="issues-repairs">None</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <!-- Operational Logs Card -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card" style="background-color: #d0f0c0; border: 1px solid #a8d08d; border-radius: 0.5rem;">
+                            <div class="card-body">
+                                <h4 style="color: #4caf50;">Operational Logs</h4>
+                                <p>Flight Logs: <span id="flight-logs">2024-07-18, 45 mins, Area B</span></p>
+                                <p>Data Collected: <span id="data-collected">Images, Thermal Maps</span></p>
+                                <p>Pilot/Operator: <span id="pilot-info">Kajal S Singh</span></p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Approval and Compliance Card -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card" style="background-color: #d0f0c0; border: 1px solid #a8d08d; border-radius: 0.5rem;">
+                            <div class="card-body">
+                                <h4 style="color: #4caf50;">Approval and Compliance</h4>
+                                <p>Approved By: <span id="approved-by">Akash Raj</span></p>
+                                <p>Date of Approval: <span id="approval-date">2024-07-19</span></p>
+                                <p>Compliance with Regulations: <span id="compliance">Yes</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Approval and Compliance Card -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card" style="background-color: #f0c8c0; border: 1px solid #a8d08d; border-radius: 0.5rem;">
+                            <div class="card-body">
+                                <h4 style="color: #af4c4c;">Identification</h4>
+                                <p>Examine By: <span id="approved-by">Pooja Singh</span></p>
+                                <p>Date of Examination: <span id="approval-date">2024-07-19</span></p>
+                                <p>Identification: <span id="compliance text-danger">NO</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Approval and Compliance Card -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card" style="background-color: #f0c8c0; border: 1px solid #a8d08d; border-radius: 0.5rem;">
+                            <div class="card-body">
+                                <h4 style="color: #af4c4c;">Detected Anomaly</h4>
+                                <p>Examine By: <span id="approved-by">Rakesh Sharma</span></p>
+                                <p>Date of Examination: <span id="approval-date">2024-07-19</span></p>
+                                <p>Anomaly Detected: <span id="compliance">Yes</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+    </main>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/jquery.dataTables.min.js"></script>
+    <script src="./js/dataTables.bootstrap5.min.js"></script>
+</body>
+
+</html>
